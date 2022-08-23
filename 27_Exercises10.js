@@ -110,3 +110,50 @@ return arr.sort();
 }
 
 console.log(myFunction10(['b', 'c', 'd', 'a']));
+
+
+////////////////EXERCISE 11/////////////
+// Write a function that takes an object with two properties and a string as arguments
+// It should return the value of the property with key equal to the value of the string
+function myFunctiono(obj, key){
+
+return obj[key];
+}
+
+console.log(myFunctiono({  continent: 'Asia',  country: 'Japan'}, 'continent'));
+
+
+///////////EXERCISE 12///////////////
+// Write a function that takes an array (a) as argument
+// Remove the first 3 elements of 'a'
+// Return the result
+function myFunctiona(a){
+
+return a.splice(3);
+}
+
+console.log(myFunctiona([5,4,3]));
+
+
+/////////////EXERCISE 13////////////////
+// Write a function that takes an array (a) as argument
+// Extract the first 3 elements of a
+// Return the resulting array
+function myFunctionb(a){
+
+return a.slice(0,3);
+}
+
+console.log(myFunctionb([1,2,3,4]));
+
+
+///////////////EXERCISE 14////////////////
+// Write a function that takes an array (a) as argument
+// Extract the last 3 elements of 'a'
+// Return the resulting array
+function myFunctionc(a){
+
+return a.slice(-3);
+}
+
+console.log(myFunctionc([1,2,3,4]));
