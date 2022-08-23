@@ -157,3 +157,59 @@ return a.slice(-3);
 }
 
 console.log(myFunctionc([1,2,3,4]));
+
+///////////////EXERCISE 15////////////////
+// Write a function that takes a Set and a value as arguments
+// Check if the value is present in the Set
+function myFunctionz(set, val){
+
+	return set.has(val);
+}
+
+console.log(myFunctionz(new Set([1, 2, 3]), 2));
+
+///////////////EXERCISE 16////////////////
+// Write a function that takes two numbers (a and b) as arguments
+// If a is smaller than b, divide a by b
+// Otherwise, multiply both numbers
+// Return the resulting value
+function myFunctiony(a, b){
+
+	return a<b ? a/b : a*b;
+}
+
+console.log(myFunctiony(10, 100));
+
+///////////////EXERCISE 17////////////////
+// Write a function that takes an object (a) and a string (b) as argument
+// Return true if the object has a property with key 'b', but only if it has a truthy value
+// In other words, it should not be null or undefined or false
+// Return false otherwise
+function myFunctionx(a, b){
+	return b in a && ( a[b] != null || a[b] != undefined) ? true : false;
+
+  // return Boolean(a[b]);
+}
+
+console.log(myFunctionx({a:1,b:2,c:3},'b'));
+
+///////////////EXERCISE 18////////////////
+// Write a function that takes a string (a) as argument
+// Remove the first 3 characters of a
+// Return the result
+function myFunctionw(a){
+
+	return a.slice(3);
+}
+
+console.log(myFunctionw('abcdefg'));
+
+///////////////EXERCISE 19////////////////
+// Write a function that takes an array (a) and a value (n) as argument
+// Return the nth element of 'a'
+function myFunctionv(a, n){
+
+	return a[n-1];
+}
+
+console.log(myFunctionv([1,2,3,4,5],3));
